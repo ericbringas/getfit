@@ -48,7 +48,7 @@ end
 private
 
 def post_workout_params
-params.require(:post_workout).permit(:name, :categoy, :date, :duration)
+params.require(:post_workout).permit(:name, :category, :date, :duration)
 end
 
 # def set_post_workout
