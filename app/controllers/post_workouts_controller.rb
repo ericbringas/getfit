@@ -7,6 +7,10 @@ def index
     @post_workouts = PostWorkout.where(user_id: current_user.id)
 end
 
+def about
+
+end
+
 def show
     @post_workout = PostWorkout.find(params[:id])
     rescue ActiveRecord::RecordNotFound

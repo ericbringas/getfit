@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :post_workouts
+  get "/pages/:page", to: "pages#show"
 
   # get "/post_workouts/new", to: "post_workouts#new", as: :new_post_work_out
 # get "/post_workouts/:id", to: "post_workouts#show", as: :post_workout

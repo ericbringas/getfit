@@ -1,0 +1,20 @@
+.jumbotron {
+   background: url('getfit2.jpg') no-repeat center center fixed;
+   height: 500px;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   background-opacity: 0.2;
+   -o-background-size: cover;
+}
+.carousel > .carousel-inner > .carousel-item > img {
+    width: 100%; 
+    height: auto;
+  objec-fit: cover;
+}
+
+a:hover {
+ text-transform: uppercase;
+ background-color: silver;
+  
+}
