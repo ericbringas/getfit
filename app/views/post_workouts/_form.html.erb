@@ -13,7 +13,8 @@
     </div>
     <div>
     <%= form.label :category %>
-    <%= form.select :category, post_workout.category.keys %>
+    <%= form.select :category, PostWorkout.categories.keys %>
+    <%# form.select :category, post_workout.category.keys %>
     </div>
     <div>
     <%= form.label :date %>
