@@ -14,7 +14,8 @@ end
 def show
     @post_workout = PostWorkout.find(params[:id])
     rescue ActiveRecord::RecordNotFound
-    redirect_to root_path
+    # redirect_to root_path
+    redirect_to post_workouts_url
 end
 
 def new

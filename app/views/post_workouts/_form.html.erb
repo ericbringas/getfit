@@ -8,13 +8,8 @@
     <% end %>
     
     <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-    </div>
-    <div>
     <%= form.label :category %>
     <%= form.select :category, PostWorkout.categories.keys %>
-    <%# form.select :category, post_workout.category.keys %>
     </div>
     <div>
     <%= form.label :date %>
@@ -24,6 +19,9 @@
     <%= form.label :duration %>
     <%= form.text_field :duration %>
     </div>
-    
+    <div>
+    <%= form.label :Comment %>
+    <%= form.text_area :name %>
+    </div>
     <%= form.button %>
 <% end %>

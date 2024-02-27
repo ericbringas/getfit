@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+     <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+ 
+    <!-- These styles are here to help highlight
+          the rows and columns to help visualise 
+          how Bootstrap 4 renders them -->
+  <title>Move and Groove</title>
+  </head>
+  <body>
+    
+  <div class="container">
+    <div class="row">
+        <div class="col bg-muted">
+          <hr>
+           <p class="text-muted font-weight-bold">Your path to a healthy lifestyle</p>
+          
+        <p>Move and Groove is your ultimate service for tracking physical exercise. It started out as a private fitness tracker but seeing the need, it is now gone public and incorporates several dozen other exercise types, including indoor and outdoor activities. </p>
+        <p>Ready to change your life and get fit? <%= link_to "Sign up now", new_user_registration_path, class: "btn btn-primary" %> If you are already a member <%= link_to "Login now", new_user_session_path, class: "btn btn-primary" %></p>
+      </div>  
+      </div>
+  <hr>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+        <div class="card border-white text-info" style="height: 30rem;">
+          <%= image_tag "jogging.jpeg" %>
+      <div class="card-body bg-light">
+        <h5 class="card-title">Our Company</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Move & Groove</h6>
+    <p class="card-text">We inspires, educates, and connects athletes and community to have the best lifestyle.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card  border-white text-info" style="height: 14rem;">
+        <%= image_tag "clara.png" %>
+        <div class="card-body bg-light">
+        <h5 class="card-title">Our Founder</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Clara Dunn</h6>
+    <p class="card-text">Started the company in 2014 at her home in Boston and grew tremendous success. </p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">  
+    <div class="card broder-white text-info" style="height: 14rem;">
+      <img src="https://st.depositphotos.com/2650957/5104/i/450/depositphotos_51049563-stock-photo-mission-button-on-virtual-screen.jpg" alt="">
+        <div class="card-body bg-light">
+        <h5 class="card-title">Our Culture</h5>
+         <h6 class="card-subtitle mb-2 text-muted">Mission & Vision</h6>
+    <p class="card-text">Inspires, educates, and connects athletes, and community to maintain a healthy lifestyle.</p>
+    </div>
+      </div>
+    </div>
+     </div>
+      <br>
+      <hr>
+    </div>
+
+
+   </div>
+      </div>
+  </body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+</html>

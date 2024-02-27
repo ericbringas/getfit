@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :post_workouts
-  get "/users/pages/:page", to: "pages#show"
-  get "/pages/pages/:page", to: "pages#show"
+#  get "/users/pages/:page", to: "pages#show"
+#  get "/pages/pages/:page", to: "pages#show"
   get "/pages/:page", to: "pages#show"
 
   # get "/post_workouts/new", to: "post_workouts#new", as: :new_post_work_out
@@ -19,5 +19,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   # Defines the root path route ("/")
 
-  root "post_workouts#index"
+#  root "post_workouts#index"
+ root "pages#home"
+
 end
