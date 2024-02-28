@@ -1,3 +1,4 @@
+ <div class="col md-3">
 <%= form_with model: post_workout do |form| %>
     <% if form.object.errors.any? %>
     <div>
@@ -11,17 +12,24 @@
     <%= form.label :category %>
     <%= form.select :category, PostWorkout.categories.keys %>
     </div>
+    <p>
     <div>
     <%= form.label :date %>
     <%= form.text_field :date %>
     </div>
+    </p>
+    </p>
     <div>
     <%= form.label :duration %>
     <%= form.text_field :duration %>
     </div>
+    </p>
+    <p>
     <div>
     <%= form.label :Comment %>
     <%= form.text_area :name %>
     </div>
+    </p>
     <%= form.button %>
 <% end %>
+</div>

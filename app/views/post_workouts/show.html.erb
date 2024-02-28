@@ -1,7 +1,23 @@
-<h5 class="text-center text-uppercase text-primary font-weight-bold"><%= link_to "New workout", new_post_workout_path %></h2>
+<div class="container">
+<div class="row">
+<div class="col md-3">
+<br>
+<h5><%= link_to "New workout", new_post_workout_path %></h2>
     
 <div>Category:<%= @post_workout.category %></div>
+<p>
 <div>Date:<%= @post_workout.date %></div>
+</p>
+<p>
 <div>Duration:<%= @post_workout.duration %></div>
-<h2>Workout: <%= @post_workout.name %></h2>
+</p>
+<p>
+<h5>Workout: <%= @post_workout.name %></h5>
+</p>
 <%= link_to "Edit", edit_post_workout_path(@post_workout) if user_signed_in? %>
+<p><%= link_to "Back", post_workouts_url %></p>
+
+
+</div>
+</div>
+</div>

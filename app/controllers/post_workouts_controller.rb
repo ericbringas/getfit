@@ -47,7 +47,7 @@ end
 def destroy
     @post_workout = PostWorkout.find(params[:id])
     @post_workout.destroy
-    redirect_to root_path
+    redirect_to post_workouts_url
 end
 
 private

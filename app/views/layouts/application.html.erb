@@ -36,23 +36,33 @@
     </div>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-  
+  <div class= "container">
+  <div class= "row">
+  <div class= "col md-3">
    <div>
     <% if user_signed_in? %>
     <h6><%= link_to "Edit Profile", edit_user_registration_path %>
     <%= button_to "Log out", destroy_user_session_path, method: :delete %>
     </h6>
     <% else %>
-      <%= link_to "Login", new_user_session_path %>
+      <%= link_to "Login", new_user_session_path %>      
       <%= link_to "Sign up", new_user_registration_path %>
     <% end %>
    </div>
+   </div>
+   </div>
+   </div>
   
   <div class="jumbotron">
-           <br><br><br>
-           <h1 class="text-start text-uppercase text-white font-weight-bold" >Move and Groove Fitness Tracker</h1>
-           <h3 class="text-start text-uppercase text-primary font-weight-bold">your health is your wealth</h5>
-  
+          <br><br><br>
+          <div class= "container">
+          <div class= "row">
+          <div class= "col md-3">
+           <h2 class="text-start text-uppercase text-white font-weight-bold" >Move and Groove Fitness Tracker</h2>
+           <h5 class="text-start ext-uppercase text-white font-weight-bold">Transform your body, elevate your mind</h5>
+          </div>
+          </div>
+          </div>
   </div>
   
   <%= yield %>

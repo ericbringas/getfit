@@ -1,11 +1,18 @@
-<h1> Move and Groove Fitness Tracker</h1>
+<div class= "container">
+<div class= "row">
+<div class= "col md-3">
+<h1> Here's your Workout list</h1>
 <h5><%= link_to "New workout", new_post_workout_path %></h2>
-    
+<br>    
 <% if @post_workouts %>
 <% @post_workouts.each do |post_workout| %>
-    <h5>Workout: <%= link_to post_workout.name, post_workout %></h2>
+    <h5>Workout: <%= link_to post_workout.name, post_workout %></h5>
     <div>Category: <%= post_workout.category %>
     <div>Date: <%= post_workout.date %></div>
     <div>Duration: <%= post_workout.duration %></div>
+    <br>
 <% end %>
 <% end %>
+</div>
+</div>
+</div>
