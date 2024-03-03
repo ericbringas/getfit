@@ -5,6 +5,8 @@ application up and running.
 
 Things you may want to cover:
 
+In this project, you'll build a fitness tracker site called Move and Groove that allows users to sign up and log activities of different kinds. The technologies you'll use to do so include HTML, CSS, Bootstrap, Ruby on Rails, and Devise. 
+
 * Ruby version
 3.3.0
 * System dependencies
