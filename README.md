@@ -14,6 +14,7 @@ Devise ~ 4.9
 * Configuration
 
 * Database creation
+sqlite ~ 1.4  
 
 * Database initialization
 
